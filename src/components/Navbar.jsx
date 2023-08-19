@@ -6,8 +6,9 @@ const Navbar = () => {
       templateColumns={'repeat(2, 1fr)'}
       w={'inherit'}
       h={'65px'}
+      borderTopRadius={{ md: '30px' }}
       bg={'#032282'}
-      pt={'25px'}
+      alignItems={'center'}
       pl={'16px'}
       pr={'16px'}
     >
@@ -15,7 +16,6 @@ const Navbar = () => {
         <Heading
           color={'#FFF'}
           m={0}
-          mt={'10px'}
           fontSize={'18px'}
           fontWeight={500}
           lineHeight={'20px'}

@@ -2,7 +2,7 @@ import { Grid, GridItem, Text, HStack, Image } from '@chakra-ui/react';
 import chevronImage from './Assets/Group 8985.svg';
 const DetailsCard = ({ title, children }) => {
   return (
-    <Grid mt={'16px'} bg={'#FFF'} borderRadius={'12px'} p={'11px 14px'}>
+    <Grid bg={'#FFF'} borderRadius={'12px'} p={'11px 14px'}>
       <GridItem borderRadius={'10px'} bg={'#F6FAFF'} px={'14px'} pt={'24px'}>
         <Text fontSize={'14px'} fontFamily={'Sora'} color={'#4F64A7'}>
           {title}

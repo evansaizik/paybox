@@ -9,40 +9,47 @@ const WalletCard = () => {
           Wallet Balance
         </Text>
         <HStack gap={'14px'}>
-          <Text fontFamily={'Sora'} color={'#FFF'} fontSize={'20px'} fontWeight={600}>
+          <Text
+            fontFamily={'Sora'}
+            color={'#FFF'}
+            fontSize={'20px'}
+            fontWeight={600}
+          >
             ₦50,000.00
           </Text>
           <Image src={eye} alt="view" />
         </HStack>
       </GridItem>
       <GridItem>
-        <Button
-          w={'112px'}
-          h={'40px'}
-          color={'#FFF'}
-          fontSize={'14px'}
-          fontWeight={600}
-          bg={'#2D4696'}
-          border={'none'}
-          borderRadius={'10px'}
-          p={'10px 27px'}
-        >
-          Add fund
-        </Button>
-        <Button
-          ml={'17px'}
-          w={'112px'}
-          h={'40px'}
-          color={'#FFF'}
-          fontSize={'14px'}
-          fontWeight={600}
-          bg={'#2D4696'}
-          border={'none'}
-          borderRadius={'10px'}
-          p={'10px 27px'}
-        >
-          Withdraw
-        </Button>
+        <HStack mt={'18px'} gap={{base: 6, md: 4}}>
+          <Button
+            w={{ base: '112px', md: '100px' }}
+            h={'40px'}
+            color={'#FFF'}
+            fontSize={'14px'}
+            fontWeight={600}
+            bg={'#2D4696'}
+            border={'none'}
+            borderRadius={'10px'}
+            p={'10px 27px'}
+          >
+            Add fund
+          </Button>
+          <Button
+            ml={'1px'}
+            w={{ base: '112px', md: '100px' }}
+            h={'40px'}
+            color={'#FFF'}
+            fontSize={'14px'}
+            fontWeight={600}
+            bg={'#2D4696'}
+            border={'none'}
+            borderRadius={'10px'}
+            p={'10px 27px'}
+          >
+            Withdraw
+          </Button>
+        </HStack>
       </GridItem>
     </Grid>
   );
