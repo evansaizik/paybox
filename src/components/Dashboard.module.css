@@ -1,0 +1,28 @@
+.layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #07112D;
+}
+
+.sidebar {
+  height: 100vh;
+}
+
+.dashboard {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  background: #FFF;
+  height: 100vh;
+}
+
+@media screen and (max-width: 740px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .dashboard {
+    grid-column: 1;
+  }
+}
