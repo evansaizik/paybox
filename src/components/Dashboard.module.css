@@ -11,7 +11,7 @@
 .dashboard {
   grid-column-start: 2;
   grid-column-end: 6;
-  background: #FFF;
+  background: #F8F9FB;
   height: 100vh;
 }
 
