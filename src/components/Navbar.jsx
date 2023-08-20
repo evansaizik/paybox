@@ -47,7 +47,12 @@ const Navbar = () => {
         >
           Menu
         </Button>
-        <HStack justifyContent={'end'} gap={6} display={{ base: 'none', md: 'flex' }}>
+        <HStack
+          justifyContent={'end'}
+          pr={'30px'}
+          gap={6}
+          display={{ base: 'none', md: 'flex' }}
+        >
           <Box
             py={'13px'}
             px={'13px'}

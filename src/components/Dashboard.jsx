@@ -5,7 +5,9 @@ import Navbar from './Navbar';
 const Dashboard = () => {
   return (
     <section className={classes.layout}>
-      <div className={classes.sidebar}></div>
+      <div className={classes.sidebar}>
+        hello
+      </div>
       <div className={classes.dashboard}>
         <Navbar />
         <Main />
