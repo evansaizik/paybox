@@ -1,7 +1,10 @@
-import { Grid } from '@chakra-ui/react';
+import { Grid, GridItem } from '@chakra-ui/react';
 import WalletCard from './WalletCard';
 import DetailsCard from './DetailsCard';
 import TransactionCard from './TransactionCard';
+import Commission from './Commision';
+import Count from './Count';
+import PieChart from './PieChart';
 
 const Main = () => {
   return (
@@ -24,7 +27,14 @@ const Main = () => {
       <TransactionCard title={'Total inflows'}>₦1,200,000</TransactionCard>
       <TransactionCard title={'Total transactions'}>₦1,200,000</TransactionCard>
       <TransactionCard title={'transactions count'}>200</TransactionCard>
-      <TransactionCard title={'transactions count'}>200</TransactionCard>
+      <Count title={'Total cashout'}>₦1,200,000</Count>
+      <Count title={'Transaction status'}>422</Count>
+      <Count title={'Average transaction Count'}>₦20,000</Count>
+      <Commission title={'Total commission'}>₦87,000</Commission>
+      <Commission title={'Average commission per transaction'}>₦500</Commission>
+      <GridItem colStart={{lg: 2}} colEnd={{lg: 4}}>
+        <PieChart />
+      </GridItem>
     </Grid>
   );
 };
